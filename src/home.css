@@ -1,0 +1,18 @@
+
+
+.logo{
+    border-radius: 500px;
+    margin-left:97%;
+    margin-top: -1.75%;
+    display: block;
+	transform: translate(-50%, -50%);
+	position: absolute;
+    height: 3%;
+    width: 2.5%;
+    display: inline-block;
+    
+}
+
+li{
+    cursor: pointer;
+}

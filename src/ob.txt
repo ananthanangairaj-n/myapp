@@ -1,0 +1,52 @@
+{
+    "user": {
+        "uid": "z9KSLlhkI3Y3nbj39zyCjqLzCoj1",
+        "email": "yellowflash.light4@gmail.com",
+        "emailVerified": true,
+        "displayName": "Anand N",
+        "isAnonymous": false,
+        "photoURL": "https://lh3.googleusercontent.com/a/AAcHTtedDbhixdoTftW_dpjlFSxSAHWX8fkO2Ow-e0ir=s96-c",
+        "providerData": [
+            {
+                "providerId": "google.com",
+                "uid": "100023776391775332394",
+                "displayName": "Anand N",
+                "email": "yellowflash.light4@gmail.com",
+                "phoneNumber": null,
+                "photoURL": "https://lh3.googleusercontent.com/a/AAcHTtedDbhixdoTftW_dpjlFSxSAHWX8fkO2Ow-e0ir=s96-c"
+            }
+        ],
+        "stsTokenManager": {
+            "refreshToken": "APZUo0T8A46EJZzfolUxtCBJ3aWj-J3KI5ICWkGAqjfBfouBvUKvqtJYKLICEhGJAJtAmLbFz1xzYYQJirhhWqs9lRcZtyyvc-qJoDr3itKg13IiHl7Pld8AxhuDNX7Xnmhf6Vk3SOtNtn6zQ4KDiSyVEw0QsQbAcu6DriFZx8X9nliaGw4znd2Q227ct8mb5TO63xwL8L5-d_pes_9opMJpGupIlnTSqeI7tgcCY8mzOTAkiZ0wPOS4sB63k4JSlY3S_OnqvXUhdgkq0JQSox3iNiS1yJz6h-VrkgFk-gZtCRfvtmW79MQapiyJq4fsfV-ZxUIdhnV5sZSJZOK4frsiPWJ-UuYOgEyxPuDU_y2Bgfr7D3H5Rj5xqr6mRcd9B1LLI3ZKqcn20zQNfWAzWDaE-pCSF24pqevlCXRLuLUVkpsJ3ECWWy0",
+            "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQW5hbmQgTiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQWNIVHRlZERiaGl4ZG9UZnRXX2RwamxGU3hTQUhXWDhma08yT3ctZTBpcj1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9hcHBjcnVkLWYzMzFkIiwiYXVkIjoiYXBwY3J1ZC1mMzMxZCIsImF1dGhfdGltZSI6MTY4NzE2MjY5NiwidXNlcl9pZCI6Ino5S1NMbGhrSTNZM25iajM5enlDanFMekNvajEiLCJzdWIiOiJ6OUtTTGxoa0kzWTNuYmozOXp5Q2pxTHpDb2oxIiwiaWF0IjoxNjg3MTYyNjk2LCJleHAiOjE2ODcxNjYyOTYsImVtYWlsIjoieWVsbG93Zmxhc2gubGlnaHQ0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTAwMDIzNzc2MzkxNzc1MzMyMzk0Il0sImVtYWlsIjpbInllbGxvd2ZsYXNoLmxpZ2h0NEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.fgr2ZdPM3xkSis76NhjN__AQHh-jD2wgTf-VCji3F7-v6ErbCKjdFQmnM_ooCzJOMWmtbPWZqL3N7-zty4JVuWsoYpCD8cAoBvXLME5yrrCivlxuu1PCIWuk05TQ-nRPyHb9ukV5xQjxLS2IqMZZxaPKhDc3w7G59bumMW-gtSaGX4gc2Iqz8UT76QUDxjhpz-FzGCvcWE2X3ewoW2GtMqzfT-mSkP0uLR1-2F-u2rHjNSMoSSGRliw2eBeBOExSPYa1YYK-4PaKB4vdOC1Xz8V8fHNhZHXRoBnH3JMdH3EU4BkRrxwySFxlsb09rc8q5PGHZ_KXE9TrjhD6EgTdlQ",
+            "expirationTime": 1687166296533
+        },
+        "createdAt": "1687089324518",
+        "lastLoginAt": "1687162696860",
+        "apiKey": "AIzaSyDc4fj2Lo1tkHKKqZzQnoieiBaDUC7k2bI",
+        "appName": "[DEFAULT]"
+    },
+    "providerId": "google.com",
+    "_tokenResponse": {
+        "federatedId": "https://accounts.google.com/100023776391775332394",
+        "providerId": "google.com",
+        "email": "yellowflash.light4@gmail.com",
+        "emailVerified": true,
+        "firstName": "Anand",
+        "fullName": "Anand N",
+        "lastName": "N",
+        "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtedDbhixdoTftW_dpjlFSxSAHWX8fkO2Ow-e0ir=s96-c",
+        "localId": "z9KSLlhkI3Y3nbj39zyCjqLzCoj1",
+        "displayName": "Anand N",
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQW5hbmQgTiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQWNIVHRlZERiaGl4ZG9UZnRXX2RwamxGU3hTQUhXWDhma08yT3ctZTBpcj1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9hcHBjcnVkLWYzMzFkIiwiYXVkIjoiYXBwY3J1ZC1mMzMxZCIsImF1dGhfdGltZSI6MTY4NzE2MjY5NiwidXNlcl9pZCI6Ino5S1NMbGhrSTNZM25iajM5enlDanFMekNvajEiLCJzdWIiOiJ6OUtTTGxoa0kzWTNuYmozOXp5Q2pxTHpDb2oxIiwiaWF0IjoxNjg3MTYyNjk2LCJleHAiOjE2ODcxNjYyOTYsImVtYWlsIjoieWVsbG93Zmxhc2gubGlnaHQ0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTAwMDIzNzc2MzkxNzc1MzMyMzk0Il0sImVtYWlsIjpbInllbGxvd2ZsYXNoLmxpZ2h0NEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.fgr2ZdPM3xkSis76NhjN__AQHh-jD2wgTf-VCji3F7-v6ErbCKjdFQmnM_ooCzJOMWmtbPWZqL3N7-zty4JVuWsoYpCD8cAoBvXLME5yrrCivlxuu1PCIWuk05TQ-nRPyHb9ukV5xQjxLS2IqMZZxaPKhDc3w7G59bumMW-gtSaGX4gc2Iqz8UT76QUDxjhpz-FzGCvcWE2X3ewoW2GtMqzfT-mSkP0uLR1-2F-u2rHjNSMoSSGRliw2eBeBOExSPYa1YYK-4PaKB4vdOC1Xz8V8fHNhZHXRoBnH3JMdH3EU4BkRrxwySFxlsb09rc8q5PGHZ_KXE9TrjhD6EgTdlQ",
+        "context": "",
+        "oauthAccessToken": "ya29.a0AWY7CklwsQOc0nzTD5lxwWWjm2XGMlST4sLeUf52kX4Y4xJtVpzH5aNgauLSfC_3T2dYFU_OvO-FYcpSwKFr2Ntela3grA2e4MxkQEDho4Bjs8VRRlVUYcbCft9fduJPRXnI92x25MwdYoheVtAcWgpxQXCUdgaCgYKAVMSARASFQG1tDrpARhjC8XDlIBTAELwDZusNw0165",
+        "oauthExpireIn": 3598,
+        "refreshToken": "APZUo0T8A46EJZzfolUxtCBJ3aWj-J3KI5ICWkGAqjfBfouBvUKvqtJYKLICEhGJAJtAmLbFz1xzYYQJirhhWqs9lRcZtyyvc-qJoDr3itKg13IiHl7Pld8AxhuDNX7Xnmhf6Vk3SOtNtn6zQ4KDiSyVEw0QsQbAcu6DriFZx8X9nliaGw4znd2Q227ct8mb5TO63xwL8L5-d_pes_9opMJpGupIlnTSqeI7tgcCY8mzOTAkiZ0wPOS4sB63k4JSlY3S_OnqvXUhdgkq0JQSox3iNiS1yJz6h-VrkgFk-gZtCRfvtmW79MQapiyJq4fsfV-ZxUIdhnV5sZSJZOK4frsiPWJ-UuYOgEyxPuDU_y2Bgfr7D3H5Rj5xqr6mRcd9B1LLI3ZKqcn20zQNfWAzWDaE-pCSF24pqevlCXRLuLUVkpsJ3ECWWy0",
+        "expiresIn": "3600",
+        "oauthIdToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjA1MTUwYTEzMjBiOTM5NWIwNTcxNjg3NzM3NjkyODUwOWJhYjQ0YWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMjczMzIxMTA0NzkwLXBiZGhpbDY2OTliMjNlM3I4anNwZHI4bzVkNG9idm1iLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMjczMzIxMTA0NzkwLXBiZGhpbDY2OTliMjNlM3I4anNwZHI4bzVkNG9idm1iLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAwMDIzNzc2MzkxNzc1MzMyMzk0IiwiZW1haWwiOiJ5ZWxsb3dmbGFzaC5saWdodDRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI0RDhkY3hzWWJoTk91WU9qY1BreFpnIiwiaWF0IjoxNjg3MTYyNjk2LCJleHAiOjE2ODcxNjYyOTZ9.26G9Zrpukf2wL9XIawTRRyYI1YtJ7WyFfNgJ45yHRfN7dlvkpqRqFuRV1utkz46Fi3cY_IHz9LxwQjZYJDEDRysHaGUzE3YV8OHBLviXHy3y2lXD613GH5tOdGJxgPrJme48avas7xsODWdPeW8OHycZsfcbBYR0taddDMBOd62TeDWiRFl7en0hROPEhYl7iDNWod9seQ3xZ3fpjQSvwHEs6ibKSCnFF92cnIv1lCcyJ0XUvqRzUsxlwtgW_t8kWEocdECSv18TCuCstxNA2Ge_2RdIN4ZnUFj-Dod0aspHUVLUvpr5m2QdZhKRjKZcmnWRy8xtYqkjpsUSii3SOA",
+        "rawUserInfo": "{\"name\":\"Anand N\",\"granted_scopes\":\"openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile\",\"id\":\"100023776391775332394\",\"verified_email\":true,\"given_name\":\"Anand\",\"locale\":\"en\",\"family_name\":\"N\",\"email\":\"yellowflash.light4@gmail.com\",\"picture\":\"https://lh3.googleusercontent.com/a/AAcHTtedDbhixdoTftW_dpjlFSxSAHWX8fkO2Ow-e0ir=s96-c\"}",
+        "kind": "identitytoolkit#VerifyAssertionResponse"
+    },
+    "operationType": "signIn"
+}
