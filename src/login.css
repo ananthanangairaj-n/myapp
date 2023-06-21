@@ -90,3 +90,60 @@
     font-family: fantasy;
     font-size: medium;
   }
+  @media only screen and (max-width: 950px){
+  
+    .login{
+      background-color: #fcfdff;
+      height: 90vh;
+      width:100%;
+      margin-top: 0px;
+      align-items: center;
+  }
+  .logoimg{
+    border-radius:100%;
+    margin-top: 6%;
+    margin-left:49%;
+    height: 10%;
+    width: 10%;
+    display: block;
+	  transform: translate(-50%, -50%);
+	  position: absolute;
+    
+  }
+  .btn1{
+    color: white;
+    background-color: #007fff;
+    height: 40px;
+    width: 60px;
+    margin-top: 30px;
+    margin-left:25%;
+    margin-right: 20%;
+    border: none;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: medium;
+  }
+  .inputbox{
+    background-color: white;
+    border-radius: 25px;
+    height: 16%;
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col1{
+    background-color:#303134;
+    display: grid;
+    margin: 40px;
+    margin-left: 15%;
+    height: 60%;
+    width: 80%;
+    border-bottom: 5px solid red;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5) ;
+}
+
+}

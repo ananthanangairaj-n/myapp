@@ -14,7 +14,7 @@ export function Post(props) {
 
 
   return ( 
-   <div  class="card" style={{width:" 14rem"}}>
+   <div  class="card " style={{width:" 14rem"}}>
         <img src={props.url} class="card-img-top" style={{width:"160px",height:"170px"}} alt="..."/>
           <div class="card-body">
             <p class="card-text" ></p>

@@ -6,6 +6,7 @@ import { getDownloadURL, listAll, ref ,getMetadata  } from "firebase/storage";
 import { updateProfile ,signOut } from "firebase/auth";
 import { storage ,auth} from "./firebase";
 import {Post} from "./Post";
+import "./profile.css";
 import { useNavigate } from "react-router";
 import { Profilepost } from "./Profilepost";
 
@@ -18,7 +19,7 @@ export function Profile() {
     const [phonenumber,setphonenumber] = useState(userauth?.phoneNumber==="" ? "0" : userauth.phoneNumber);
     const [photo,setphoto] = useState(userauth?.photoURL);
     const  navigate = useNavigate();
-
+    const [style,setstyle] = useState({});
     const[imageList,setimagelist] = useState([]);
     const imagelistref = ref(storage,"Post/");
    
@@ -62,14 +63,23 @@ export function Profile() {
         settext("profile updated");
     }
     
+    React.useEffect(() => {
+        function handleResize() {
+          if (window.innerWidth > 900) {
+            setstyle({width:" 31rem",float:"none",marginTop:"3%"});
+          } else {
+            setstyle({width:" 20rem",float:"none",marginTop:"3%"});
+          }
+        }
+    handleResize();
+    })
 
     return ( 
         <div>
         <Navbar />
        <center>      
           <img src={photo} alt="userlogo" style={{marginTop:"2.5%"}}/>
-    
-         <div className="card" style={{width:" 60rem",float:"none",marginTop:"3%"}}>
+         <div className="card" style={style}>
 
          <div class="container" style={{padding:"7%"}}>
             <div class="row">
