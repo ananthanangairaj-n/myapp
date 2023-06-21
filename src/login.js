@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import './login.css';
 import {AiFillEye,AiFillEyeInvisible} from "react-icons/ai";
 import {FcGoogle} from "react-icons/fc";
-import { onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut  } from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup} from "firebase/auth";
 import { auth, googleprovider } from "./firebase";
 import {useNavigate } from 'react-router-dom';
 import { Appcontext } from "./Navi";
@@ -45,7 +45,6 @@ export function Login() {
     }
     const handlesubmit = async()=>{
         navigate('/home');
-        await signOut(auth);
         setuserauth("");
     }
 

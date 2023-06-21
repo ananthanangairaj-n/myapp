@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import { BsPlusSquare } from "react-icons/bs";
+import { BiImageAdd } from "react-icons/bi";
+import { FaUsersCog } from "react-icons/fa";
+import {HiHome} from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import './home.css';
 import { Appcontext } from "./Navi";
@@ -27,18 +29,22 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse " id="mynavbar"> 
             <ul className="navbar-nav ms-auto">
-                <li className="nav-item nav-link" onClick={()=>{navigate("/home")}}>Home</li>
-                <li className="nav-item nav-link ">Post  (<BsPlusSquare size={18} onClick={handleaddpost}></BsPlusSquare>)
+                <li className="nav-item nav-link" onClick={()=>{navigate("/home")}}><HiHome size={25}></HiHome></li>
+                <li className="nav-item nav-link ">Post  (<BiImageAdd size={30} onClick={handleaddpost}></BiImageAdd>)
                 </li>
                 <li className="nav-item ">{  currentuser ==="" && <button type="submit" className="btn2" onClick={()=>{navigate( "/" )}}>Login</button> 
             }</li>
              <li className="nav-item">{  currentuser ==="" && <button type="submit" className="btn2" onClick={()=>{navigate( "/createuser" )}}>signup</button> 
              }</li>
+              <li className="nav item">
+              {  currentuser !=="" && <FaUsersCog size={"30"} style={{marginTop:"15%"}} onClick={()=>{navigate( "/profile" )}}></FaUsersCog> }
+              
+              </li>
             </ul>
             </div>
             </div>
             </nav>
-            {  currentuser && <img className="logo" src={currentuser.photoURL} style={{cursor:"pointer"}} alt="user" onClick={()=>{navigate("/profile")}}></img>}
+            {  currentuser && <img className="logo" src={currentuser.photoURL}  alt="user" ></img>}
         </div>
      );
 }

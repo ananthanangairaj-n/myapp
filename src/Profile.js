@@ -1,8 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState ,useEffect} from "react";
 import { Appcontext } from "./Navi";
 import Navbar from "./Navbar";
 import 'bootstrap/dist/css/bootstrap.css';
-import { updateProfile  } from "firebase/auth";
+import { getDownloadURL, listAll, ref ,getMetadata  } from "firebase/storage";
+import { updateProfile ,signOut } from "firebase/auth";
+import { storage ,auth} from "./firebase";
+import {Post} from "./Post";
+import { useNavigate } from "react-router";
+import { Profilepost } from "./Profilepost";
 
 
 export function Profile() {
@@ -12,12 +17,51 @@ export function Profile() {
     const [email,setemail] = useState(userauth.email);
     const [phonenumber,setphonenumber] = useState(userauth?.phoneNumber==="" ? "0" : userauth.phoneNumber);
     const [photo,setphoto] = useState(userauth?.photoURL);
+    const  navigate = useNavigate();
+
+    const[imageList,setimagelist] = useState([]);
+    const imagelistref = ref(storage,"Post/");
+   
+
+    useEffect(()=>{
+        listAll(imagelistref).then((response)=>{
+            response.items.forEach((item)=>{
+                getDownloadURL(item).then((url)=>{
+                    const url1 = new URL(url);
+                    const path = url1.pathname; 
+                    const urlPath = path;
+                    const decodedPath = decodeURIComponent(urlPath.substring(urlPath.indexOf('/o/') + 3));
+                    const forestref = ref(storage,decodedPath);
+                    getMetadata(forestref).then((metadata1)=>{
+                        if(metadata1.customMetadata.uid === userauth.uid)
+                        {
+                            setimagelist((prev)=>[...prev,url])
+                        }
+                    }).catch((error)=>{console.log(error)})
+                 
+                })
+            })
+        })
+        // console.log(imageList);
+    },[])
+
+    const imagedelete = (url) =>{
+        console.log(url);
+        const con =imageList.filter((itemurl)=> {return itemurl!=url});
+        setimagelist(con);
+    }
+
+    const handleLOgout = async() =>{
+        await signOut(auth);
+        navigate("/");
+    }
+
     const handleupdate = () =>{
         console.log(name,email,phonenumber);
         updateProfile(userauth, {displayName:name,photoURL:photo,email:email,phoneNumber:phonenumber});
         settext("profile updated");
     }
-
+    
 
     return ( 
         <div>
@@ -28,7 +72,7 @@ export function Profile() {
          <div className="card" style={{width:" 60rem",float:"none",marginTop:"3%"}}>
 
          <div class="container" style={{padding:"7%"}}>
-         <div class="row">
+            <div class="row">
                 <div class="col-sm">
                 <label >userUid</label>
                 </div>
@@ -60,14 +104,25 @@ export function Profile() {
                 <input type="text"  onChange={(e)=>setphonenumber(e.target.value)} value={phonenumber}/>
                 </div>
             </div>
-            <div class="row">
-                <center><button class="btn2" onClick={handleupdate} >Update</button></center>
-            </div>
         </div>   
+        <div class="row">
+                 <div class="col-sm">
+                 <button class="btn2" onClick={handleupdate} >Update</button>
+                </div>
+                <div class="col-sm">
+                 <button   class="btn2" onClick={handleLOgout}> logout</button>
+                </div>
+            </div>
         </div>
-        {text}
+        <h4  className="text1"  style={{color:"burlywood",fontFamily:"fantasy",fontSize:"larger"}}>{text}</h4>
         </center>
-       
+        <div>
+            {
+            imageList.map((url)=>
+            <Profilepost url ={url} onDelete = {imagedelete} />    
+            )}
+        </div> 
+            
         </div> );
 }
 

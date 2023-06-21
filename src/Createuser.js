@@ -38,8 +38,8 @@ export default function Createuser() {
     return ( 
         <div>
         <div className="login">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU" alt="no" height={"100px"} width={"100px"}></img>
-        <div className="col">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"  alt="no" className="logoimg"  height={"100px"} width={"100px"}></img>
+        <div className="col1">
         <div className="logininside">
         <center>
         <form onSubmit={handleSubmit(clicksubmit)} className="forms">
