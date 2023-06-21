@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Navbar from "./Navbar";
-import { ref, uploadBytes } from "firebase/storage";
-import { auth, storage } from "./firebase";
+import { ref, uploadBytes ,updateMetadata} from "firebase/storage";
+import { storage } from "./firebase";
 import { MdOutlineDriveFileMove } from "react-icons/md";
 import "./App.css";
 import { Appcontext } from "./Navi";
@@ -13,10 +13,20 @@ function Addpost() {
     const {userauth} = useContext(Appcontext);
     const handleclick = () => {
     if(typefile== null) return;
-    const imageref = ref(storage,`Post/${typefile.name +userauth.currentUser.uid}`)
-    uploadBytes(imageref,typefile).then(()=>{settext("image uploaded")})
-
+    const metadata = {
+     customMetadata:{
+        uid:userauth.uid,
+        name:userauth.displayName,
+        email:userauth.email,
+     }
     }
+    console.log(metadata);
+    const filename = `Post/${typefile.name +userauth.uid+userauth.displayName}`;
+    const imageref = ref(storage,filename);
+    uploadBytes(imageref,typefile).then(()=>{settext("image uploaded")})
+    updateMetadata(imageref,metadata).then((met)=> {console.log(met)}).catch((error)=>{console.log(error)});
+
+}
 
     return ( <div>
     <Navbar />
@@ -31,7 +41,8 @@ function Addpost() {
     <br></br>
     <center className="text1" style={{color:"burlywood",fontFamily:"fantasy",fontSize:"larger"}}>
     <input type="text"/>
-    {text}</center>
+    {<center>{text}</center>}</center>
+    
     </div>);
 }
 

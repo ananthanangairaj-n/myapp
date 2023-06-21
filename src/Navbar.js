@@ -2,9 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { BsPlusSquare } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import { auth } from "./firebase";
 import './home.css';
-import { onAuthStateChanged  } from "firebase/auth";
 import { Appcontext } from "./Navi";
 
 function Navbar() {
@@ -13,7 +11,7 @@ function Navbar() {
     const [currentuser,setcurrentuser] = useState("");
    useEffect(()=>{
      setcurrentuser(userauth);
-   })
+   },[userauth])
 
     const handleaddpost = () => {
         navigate('/Addpost');
@@ -40,7 +38,7 @@ function Navbar() {
             </div>
             </div>
             </nav>
-            {  currentuser && <img className="logo" src={currentuser.currentUser?.photoURL} style={{cursor:"pointer"}} alt="user" ></img>}
+            {  currentuser && <img className="logo" src={currentuser.photoURL} style={{cursor:"pointer"}} alt="user" onClick={()=>{navigate("/profile")}}></img>}
         </div>
      );
 }

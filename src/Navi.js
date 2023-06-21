@@ -6,6 +6,7 @@ import Addpost from './Addpost';
 import Createuser from './Createuser';
 import { createContext, useState } from 'react';
 import ProtectedRoute from './Protectedroute';
+import { Profile } from './Profile';
 
 export const Appcontext = createContext();
 
@@ -21,6 +22,7 @@ function Navi() {
       <Route path='/createuser' element={<Createuser/>} />
       <Route element={<ProtectedRoute/>}>
         <Route path='/Addpost' element={<Addpost/>} exact/>
+        <Route path='/profile' element={<Profile />} excat />
       </Route>
     </Routes>
     </Router>

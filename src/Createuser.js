@@ -3,7 +3,7 @@ import * as yup from "yup";
 import './login.css';
 import {yupResolver} from "@hookform/resolvers/yup";
 import {  useNavigate } from "react-router-dom";
-import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signOut  } from "firebase/auth";
 import { auth } from "./firebase";
 
 
