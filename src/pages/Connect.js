@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import contactimg from "../assets/img/contact-img.svg"
+import {BsBoxArrowRight} from "react-icons/bs";
+import "../App.css";
 
 function Connect() {
 
     const initialformdetails = {
-        firstname:'',
-        lastname:'',
+        name:'',
         email:'',
-        phone:'',
+        subject:'',
         message:''
     }
     const [formdetails,setformdetails] = useState(initialformdetails);
-    const [status,setstatus] = useState({});
-    const [send ,setsend ] = useState("send");
+    const [state,setstate] = useState(false);
     const onformupdate  = (category,value) =>{
         setformdetails({...formdetails,[category]:value});
     }
-    const handlesubmit = (e) =>{
-            console.log(e)
+    const handlesubmit = () =>{
+            console.log(formdetails);
+            setstate(true);
     }
 
     return ( 
@@ -25,44 +26,25 @@ function Connect() {
             <div className="container">
                 <div className="row">
                     <div className="col md-6">
-                        <img src={contactimg} alt="contactimg" />
+                        <img src={contactimg}  class="img-fluid"  alt="contactimg" />
                     </div>
                     <div className="col md-6">
-                    <h2>get in touch</h2>
-                    <div className="card" style={{width:"auto"}}>
-                    <form onSubmit={handlesubmit}>
-                        <div className="row">
-                            <div className="col ">
-                                <input value={formdetails.firstname} type="text" placeholder="firstname"
-                                onChange={(e)=>{onformupdate('firstname',e.target.value)}} />
-                            </div>
+                    <div className="card">
+                    <div className="row">
+                        <div className="col">
+                        <h5  class="fw-bolder"><center>Get in Touch</center></h5>
+                        <form onSubmit={handlesubmit} >
+                            <input type="text" onChange={(e)=>{onformupdate('name',(e.target.value))}} placeholder="name" value={formdetails.name}/>
+                            <input type="email" onChange={(e)=>{onformupdate('email',(e.target.value))}} placeholder="email" value={formdetails.email}/>
+                            <input type="text" onChange={(e)=>{onformupdate('subject',(e.target.value))}} placeholder="subject" value={formdetails.subject}/>
+                            <textarea rows={4} onChange={(e)=>{onformupdate('message',(e.target.value))}} placeholder="message" value={formdetails.message} />
+                            <br></br>
+                            <center><button type="submit" className="btn btn-success ">send email {"   "}<BsBoxArrowRight ></BsBoxArrowRight></button></center>
+                        </form>
+                        {state && <h5>Message Sent</h5>}
                         </div>
-                        <div className="row">
-                            <div className="col ">
-                                <input value={formdetails.lastname} type="text" placeholder="lastname"
-                                onChange={(e)=>{onformupdate('lastname',e.target.value)}} />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col ">
-                                <input value={formdetails.email} type="text" placeholder="email"
-                                onChange={(e)=>{onformupdate('email',e.target.value)}} />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col ">
-                                <input value={formdetails.phonenumber} type="text" placeholder="phonenumber"
-                                onChange={(e)=>{onformupdate('phonenumber',e.target.value)}} />
-                            </div>
-                        </div>
-                         <div className="row">
-                            <div className="col">
-                                <textarea rows={6} value={formdetails.message} type="text" placeholder="message"
-                                onChange={(e)=>{onformupdate('message',e.target.value)}} />
-                                <button type="submit" className="btn btn-primary btn-sm" >{send}</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
+                
                     </div>
                     </div>
                 </div>

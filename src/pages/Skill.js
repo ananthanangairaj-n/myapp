@@ -45,7 +45,11 @@ function Skill() {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="image"/>
-                                <h5>React</h5>
+                                <h5>React js</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="image"/>
+                                <h5>Java</h5>
                             </div>
                         </Carousel>
                     </div>

@@ -51,19 +51,7 @@ skill.css
     height: 100%;
 }
 
-/*
-@media only screen and (max-width: 500px) {
-  
-.home{
-    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/B8xMmOScxizs8vvaw/videoblocks-astronaut-3d-4k-animation_sktwq67lr_thumbnail-1080_01.png');
-    position:absolute;
-    background-size: cover;
-    width: 300px;
-    height: 670px;
-    background-size: 100% 100%;
-    }
-  }
-  @media only screen and (min-width:400px )and (max-width: 800px) {
+/*media only screen and (min-width:400px )and (max-width: 800px) {
   
     .home{
         background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/B8xMmOScxizs8vvaw/videoblocks-astronaut-3d-4k-animation_sktwq67lr_thumbnail-1080_01.png');
@@ -76,17 +64,72 @@ skill.css
       } */
 
 
-      .contact {
-        background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-        padding: 60px 0 200px 0;
-      }
-      .contact img {
-        width: 92%;
-      }
-      .contact h2 {
-          font-size: 45px;
-          font-weight: 700;
-        margin-bottom: 30px;
-      }
+.contact {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    padding: 160px 0 200px 0;
+  }
+.contact img {
+    width: 92%;
+    height:100%;
+  }
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .about h2{
+    color: white;
+    font-size:xx-large;
+  }
+  .about p{
+    color: #B8B8B8;
+    margin-top: 10%;
+    font-size: medium;
+  }
+
+  .card input,textarea{
+    border-radius: 10%;
+    color: #B8B8B8;
+    background-color:  #f0f5f5;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline:#83afaf;
+    width: 90%;
+  }
+
+  .card  h5{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .card button{
+    border-radius: 17%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .card{
+    padding: 5%;
+    padding-right: 0%;
+  }
+ 
+  @media only screen and (max-width:600px) {
+    .card{
+      padding: 5%;
+      padding-right: 0%;
+    }
+    .card button{
+      width: 40;
+      height: 10%;
+      font-size: small;
+    }
+    .card h5{
+      font-size:small ;
+    }
+    .contact {
+      background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+      padding: 250px 0px 200px 20px;
+    }
+    
+  }
+
+
      
       
