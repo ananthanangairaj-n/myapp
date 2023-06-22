@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+skill.css
+.skill {
+    padding: 0 0 50px 0;
+    position: relative;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .skill-bx {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
   }
-  to {
-    transform: rotate(360deg);
+  .skill h2 {
+      font-size: 45px;
+      font-weight: 700;
+      color: white ;
   }
+  .skill p {
+      color: #B8B8B8;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      margin: 14px 0 75px 0;
+  }
+  .skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .skill-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+  }
+  .background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+  }
+
+  .skill h5{
+    color: aliceblue;
+  }
+
+.home{
+    background-image: url("assets/img/banner-bg.png");
+    position:absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
+
+/*
+@media only screen and (max-width: 500px) {
+  
+.home{
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/B8xMmOScxizs8vvaw/videoblocks-astronaut-3d-4k-animation_sktwq67lr_thumbnail-1080_01.png');
+    position:absolute;
+    background-size: cover;
+    width: 300px;
+    height: 670px;
+    background-size: 100% 100%;
+    }
+  }
+  @media only screen and (min-width:400px )and (max-width: 800px) {
+  
+    .home{
+        background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/B8xMmOScxizs8vvaw/videoblocks-astronaut-3d-4k-animation_sktwq67lr_thumbnail-1080_01.png');
+        position:absolute;
+        background-size: cover;
+        width: 500px;
+        height: 670px;
+        background-size: 100% 100%;
+        }
+      } */
+
+
+      .contact {
+        background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+        padding: 60px 0 200px 0;
+      }
+      .contact img {
+        width: 92%;
+      }
+      .contact h2 {
+          font-size: 45px;
+          font-weight: 700;
+        margin-bottom: 30px;
+      }
+     
+      
