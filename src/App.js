@@ -5,9 +5,12 @@ import Home from './pages/Home';
 import Skill from './pages/Skill';
 import Connect from './pages/Connect';
 import Navbar from './components/Navbar';
+import Three from './components/Three';
+
 
 function App() {
   return (
+    <>
    <BrowserRouter>
          <Navbar />
    <Routes>
@@ -15,8 +18,20 @@ function App() {
         <Route path='/skill' element={<Skill/>} />
         <Route path='/studies' element={<Experience/>} />
         <Route path='/connect' element={<Connect/>} />
+        <Route path='/three' element={<Three />} />
+
    </Routes>
    </BrowserRouter>
+  {/* <div>
+    <Home />
+    <Skill/>
+    
+    <Experience/>
+
+    <Connect/>
+
+  </div> */}
+  </>
   );
 }
 

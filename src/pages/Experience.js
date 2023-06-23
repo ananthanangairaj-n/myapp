@@ -7,6 +7,7 @@ import {GiBookmarklet} from "react-icons/gi"
 export default function Experience() {
     return (  
     <div className="Experience">
+    <div className="container">
         <VerticalTimeline lineColor="#3e497a">
             <VerticalTimelineElement className="vertical-timeline-element--education"
             date="2005-2018"
@@ -47,7 +48,7 @@ export default function Experience() {
             </VerticalTimelineElement>
           
         </VerticalTimeline>
-
+        </div>
     </div> 
     );
 }
