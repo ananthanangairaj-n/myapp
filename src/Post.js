@@ -14,14 +14,14 @@ export function Post(props) {
 
 
   return ( 
-   <div  class="card " style={{width:" 14rem"}}>
-        <img src={props.url} class="card-img-top" style={{width:"160px",height:"170px"}} alt="..."/>
+   <div  class="card " style={{width:" 20rem" ,height:"auto",justifyContent:"center",alignItems:"center",display:"flex"}}>
+        <img src={props.url} class="card-img-top" style={{width:"200px",height:"200px"}} alt="..."/>
           <div class="card-body">
             <p class="card-text" ></p>
           </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Post by <br></br>  <FaUserTag></FaUserTag> {metadata?.name} </li>
-          <li class="list-group-item">Description <br></br>{metadata?.description} </li>
+          <li class="list-group-item" >Description <br></br>{metadata?.description} </li>
         </ul>
    </div>
 

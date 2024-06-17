@@ -9,6 +9,8 @@ import {Post} from "./Post";
 import "./profile.css";
 import { useNavigate } from "react-router";
 import { Profilepost } from "./Profilepost";
+import { ToastContainer,  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export function Profile() {
@@ -19,7 +21,6 @@ export function Profile() {
     const [phonenumber,setphonenumber] = useState(userauth?.phoneNumber==="" ? "0" : userauth.phoneNumber);
     const [photo,setphoto] = useState(userauth?.photoURL);
     const  navigate = useNavigate();
-    const [style,setstyle] = useState({});
     const[imageList,setimagelist] = useState([]);
     const imagelistref = ref(storage,"Post/");
    
@@ -60,28 +61,27 @@ export function Profile() {
     const handleupdate = () =>{
         console.log(name,email,phonenumber);
         updateProfile(userauth, {displayName:name,photoURL:photo,email:email,phoneNumber:phonenumber});
-        settext("profile updated");
+        toast.success('updated', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
     }
     
-    React.useEffect(() => {
-        function handleResize() {
-          if (window.innerWidth > 900) {
-            setstyle({width:" 31rem",float:"none",marginTop:"3%"});
-          } else {
-            setstyle({width:" 20rem",float:"none",marginTop:"3%"});
-          }
-        }
-    handleResize();
-    })
 
     return ( 
         <div>
         <Navbar />
        <center>      
           <img src={photo} alt="userlogo" style={{marginTop:"2.5%"}}/>
-         <div className="card" style={style}>
+         <div className="card" style={{width:"auto",float:"none",marginTop:"3%"}}>
 
-         <div class="container" style={{padding:"7%"}}>
+         <div class="container" style={{padding:"auto"}}>
             <div class="row">
                 <div class="col-sm">
                 <label >userUid</label>
@@ -132,7 +132,7 @@ export function Profile() {
             <Profilepost url ={url} onDelete = {imagedelete} />    
             )}
         </div> 
-            
+        <ToastContainer />
         </div> );
 }
 

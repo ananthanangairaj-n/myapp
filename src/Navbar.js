@@ -40,11 +40,14 @@ function Navbar() {
               {  currentuser !=="" && <FaUsersCog size={"30"} style={{marginTop:"15%"}} onClick={()=>{navigate( "/profile" )}}></FaUsersCog> }
               
               </li>
+              <li className="nav item">
+              {  currentuser && <img className="logo" src={currentuser.photoURL}  alt="user" ></img>}
+              </li>
             </ul>
             </div>
             </div>
             </nav>
-            {  currentuser && <img className="logo" src={currentuser.photoURL}  alt="user" ></img>}
+           
         </div>
      );
 }

@@ -35,6 +35,10 @@ export default function Createuser() {
         }
     }
 
+    const clickback = () =>{
+        navigate("/");
+    }
+
     return ( 
         <div>
         <div className="login">
@@ -56,7 +60,9 @@ export default function Createuser() {
         <h5 className="error">{errors.confirmpassword?.message}</h5>
         </div>
         <button type="submit" className="btn2"onClick={clicksubmit}  >Submit</button>
-
+        <br></br>
+        <br></br>
+        <button type="submit" className="btn2"onClick={clickback}  >back</button>
         </form>
         </center>
         </div>

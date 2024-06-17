@@ -31,8 +31,10 @@ function Home() {
         </div >
         <div>
             {
-            imageList.map((url)=>
+            imageList.map((url)=><>
+            <div style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
             <Post url ={url}/>
+            </div></>
             )}
         </div>
         </div>

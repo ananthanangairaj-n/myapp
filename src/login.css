@@ -43,7 +43,7 @@
   .inputbox{
     background-color: white;
     border-radius: 25px;
-    height: 10%;
+    height: 20%;
     width: 50%;
     margin-bottom: 30px;
     display: flex;
@@ -57,9 +57,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .logoimg{
-    border-radius: 500px;
-    margin-top: 3%;
+    border-radius: 450px;
+    margin-top: 2%;
     margin-left:48%;
+    height: 10%;
+    width: 5%;
     display: block;
 	  transform: translate(-50%, -50%);
 	  position: absolute;
@@ -90,9 +92,9 @@
     font-family: fantasy;
     font-size: medium;
   }
-  @media only screen and (max-width: 950px){
+@media only screen and (max-width: 640px){
   
-    .login{
+  .login{
       background-color: #fcfdff;
       height: 90vh;
       width:100%;
@@ -101,10 +103,10 @@
   }
   .logoimg{
     border-radius:100%;
-    margin-top: 6%;
-    margin-left:49%;
+    margin-top: 7%;
+    margin-left:42%;
     height: 10%;
-    width: 10%;
+    width: 15%;
     display: block;
 	  transform: translate(-50%, -50%);
 	  position: absolute;
@@ -136,14 +138,62 @@
   .col1{
     background-color:#303134;
     display: grid;
-    margin: 40px;
-    margin-left: 15%;
-    height: 60%;
+    margin: 30px;
+    margin-left: 10%;
+    height: 70%;
     width: 80%;
     border-bottom: 5px solid red;
     align-items: center;
     border-radius: 30px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.5) ;
 }
+
+}
+@media only screen  and (min-width: 700px) and (max-width: 1230px) {
+  
+  .login{
+      background-color: #fcfdff;
+      height: 90vh;
+      width:100%;
+      margin-top: 0px;
+      align-items: center;
+  }
+  .logoimg{
+    border-radius:100%;
+    margin-top: 5%;
+    margin-left:47%;
+    height: 5%;
+    width: 6%;
+    display: block;
+	  transform: translate(-50%, -50%);
+	  position: absolute;
+    
+  }
+
+   .btn1{
+    color: white;
+    background-color: #007fff;
+    height: 40px;
+    width: 60px;
+    margin-top: 30px;
+    margin-left:30%;
+    margin-right: 20%;
+    border: none;
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: medium;
+  }
+  .inputbox{
+    background-color: white;
+    border-radius: 25px;
+    height: 5%;
+    width: 70%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
 
 }
